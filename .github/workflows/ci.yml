@@ -1,0 +1,41 @@
+name: CI - Xcode Build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    name: Build (macOS)
+    runs-on: macos-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies (none)
+        run: echo "No external dependency manager detected. Skipping."
+
+      - name: Build app (Simulator)
+        env:
+          PROJECT_PATH: "DashLink HUD/DashLink HUD/DashLink HUD2.0.xcodeproj"
+          TARGET: "DashLink HUD"
+        run: |
+          set -o pipefail
+          xcodebuild -project "$PROJECT_PATH" \
+            -target "$TARGET" \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            clean build | xcpretty || cat
+
+      - name: Upload logs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-logs
+          path: |
+            ${{ github.workspace }}/xcodebuild.log

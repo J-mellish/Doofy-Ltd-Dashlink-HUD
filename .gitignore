@@ -1,0 +1,25 @@
+# Xcode build artifacts
+build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# macOS
+.DS_Store
+
+# Derived Data
+DerivedData/
+
+# Swift Package Manager
+.build/
+*.resolved
+
+# Temporary files
+*.swp
+*.swo
+*~
+.*.swp
