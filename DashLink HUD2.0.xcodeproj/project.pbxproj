@@ -8,15 +8,6 @@
 
 /* Begin PBXFileReference section */
 		187811482EB40611001BDCB9 /* DashLink HUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DashLink HUD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		187811762EB40AD0001BDCB9 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
-		187811772EB40AE9001BDCB9 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
-		187811792EB40B24001BDCB9 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
-		1878117A2EB40B35001BDCB9 /* MockDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataService.swift; sourceTree = "<group>"; };
-		1878117C2EB40BF1001BDCB9 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		1878117D2EB40C7F001BDCB9 /* HUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
-		1878117E2EB40CA1001BDCB9 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
-		1878117F2EB40CAB001BDCB9 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
-		187811802EB40D21001BDCB9 /* DetailDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDrawerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +36,16 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+			9AB164382EB950F800F07E90 /* Service */ = {
+				isa = PBXFileSystemSynchronizedRootGroup;
+				path = Service;
+				sourceTree = "<group>";
+			};
+			9AB164392EB950F800F07E90 /* View */ = {
+				isa = PBXFileSystemSynchronizedRootGroup;
+				path = View;
+				sourceTree = "<group>";
+			};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +119,8 @@
 			fileSystemSynchronizedGroups = (
 				1878114A2EB40611001BDCB9 /* DashLink HUD */,
 				9AB164362EB950F800F07E90 /* Data */,
+				9AB164382EB950F800F07E90 /* Service */,
+				9AB164392EB950F800F07E90 /* View */,
 			);
 			name = "DashLink HUD";
 			packageProductDependencies = (
