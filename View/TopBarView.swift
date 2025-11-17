@@ -67,4 +67,3 @@ fileprivate extension View {
         if UIDevice.current.userInterfaceIdiom == .phone { self.hidden() } else { self }
     }
 }
-``
