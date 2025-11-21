@@ -1,8 +1,11 @@
 import SwiftUI
 import Combine
-import Presets
 struct TopBarView: View {
+    class SettingsStore: ObservableObject {
+        // your properties and methods
+    }
     @EnvironmentObject var settings: SettingsStore
+
     var onChangePreset: (ModePreset) -> Void
 
     var body: some View {
@@ -10,9 +13,10 @@ struct TopBarView: View {
             // Mode (never hide)
             Menu {
                 Section("Built-in") {
+                    let PRESETS: [ModePreset]
                     ForEach(PRESETS) { p in
                         Button(p.name) {
-                            settings.activePreset = p
+                            $settings.activePreset = p
                             onChangePreset(p)
                         }
                     }
@@ -53,7 +57,7 @@ struct TopBarView: View {
             }.hiddenIfCompactWidth()
 
             // Mirror toggle
-            Button { settings.mirror.toggle() } label {
+            Button { settings.mirror.toggle() } ;{
                 Image(systemName: "rectangle.on.rectangle.angled")
             }
             .buttonStyle(.bordered)

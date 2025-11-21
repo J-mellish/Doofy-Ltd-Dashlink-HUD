@@ -36,16 +36,16 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-			9AB164382EB950F800F07E90 /* Service */ = {
-				isa = PBXFileSystemSynchronizedRootGroup;
-				path = Service;
-				sourceTree = "<group>";
-			};
-			9AB164392EB950F800F07E90 /* View */ = {
-				isa = PBXFileSystemSynchronizedRootGroup;
-				path = View;
-				sourceTree = "<group>";
-			};
+		9AB164382EB950F800F07E90 /* Service */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9AB164392EB950F800F07E90 /* View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,8 @@
 			children = (
 				1878114A2EB40611001BDCB9 /* DashLink HUD */,
 				187811492EB40611001BDCB9 /* Product */,
-				187811752EB40AB8001BDCB9 /* Service */,
-				1878117B2EB40BDA001BDCB9 /* View */,
 				9AB164362EB950F800F07E90 /* Data */,
+				9A6E756D2ECE528000A6AB68 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,27 +77,13 @@
 			name = Product;
 			sourceTree = "<group>";
 		};
-		187811752EB40AB8001BDCB9 /* Service */ = {
+		9A6E756D2ECE528000A6AB68 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				187811762EB40AD0001BDCB9 /* SettingsStore.swift */,
-				187811772EB40AE9001BDCB9 /* Units.swift */,
-				187811792EB40B24001BDCB9 /* HistoryStore.swift */,
-				1878117A2EB40B35001BDCB9 /* MockDataService.swift */,
+				9AB164382EB950F800F07E90 /* Service */,
+				9AB164392EB950F800F07E90 /* View */,
 			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		1878117B2EB40BDA001BDCB9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1878117E2EB40CA1001BDCB9 /* TopBarView.swift */,
-				187811802EB40D21001BDCB9 /* DetailDrawerView.swift */,
-				1878117F2EB40CAB001BDCB9 /* TileView.swift */,
-				1878117D2EB40C7F001BDCB9 /* HUDView.swift */,
-				1878117C2EB40BF1001BDCB9 /* Theme.swift */,
-			);
-			path = View;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,14 +122,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2600;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					187811472EB40611001BDCB9 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 187811432EB40611001BDCB9 /* Build configuration list for PBXProject "DashLink HUD" */;
+			buildConfigurationList = 187811432EB40611001BDCB9 /* Build configuration list for PBXProject "DashLink HUD3.0" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -218,6 +203,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -240,6 +226,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -279,6 +266,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -294,6 +282,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -305,6 +294,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -347,6 +337,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
@@ -385,7 +376,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		187811432EB40611001BDCB9 /* Build configuration list for PBXProject "DashLink HUD" */ = {
+		187811432EB40611001BDCB9 /* Build configuration list for PBXProject "DashLink HUD3.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				187811512EB40614001BDCB9 /* Debug */,
